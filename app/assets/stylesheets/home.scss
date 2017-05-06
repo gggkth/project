@@ -1,0 +1,26 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.box{
+    height: 700px;
+    width: 100%;
+    background-color: #529abb;
+    background-image: url(../img/bg-mac.png);
+    background-size : 1200px 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.text{
+    height : 500px;
+    width : 700px;
+    margin : 90px auto;
+}
+
+.option{
+    text-align: left;
+}

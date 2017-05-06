@@ -1,0 +1,216 @@
+  <!-- intro area -->	  
+	  <div id="intro">
+	  
+			<div class="intro-text">
+				<div class="container">
+					<div class="row">
+					
+						
+					<div class="col-md-12">
+			
+						<div class="brand">
+							<h1><%= link_to '아무말대잔치', {controller: :home, action: :main}%></h1>
+							<div class="line-spacer"></div>
+							<p><span>투표는 '최악'을 피하는 것이다!</span></p>
+						</div>
+					</div>
+					</div>
+				</div>
+		 	</div>
+			
+	 </div>
+	  
+<!-- Services -->
+	 <section id="services" class="home-section bg-white">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h2>아무말대잔치의 서비스</h2>
+					 <p>요즘 후보들 공약은 다 느무 멋짐! 박그ㄴ(읍읍)도  공약은 뛰어났다! <br>
+					 중요한것은 후보들의 말과 행보에서 보여지는 됨됨이!<br>
+					 저희 아무말 대잔치에서는 우주최초!! 로 '네거티브'를 컨셉으로 후보들의 아무말을 모았습니다.
+					 국방, 여성보육, 측근관리 등 분야별 체계적으로 아무말을 모아보고! 절대 뽑지 말아야 할 최악의 아무말후보를 알아봅시다!<br>
+					 당신의 아무말 소년,소녀를 뽑아주세여!</p>
+					</div>
+				  </div>
+			  </div>
+			  <div class="centerarrange">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.5s">
+					<div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+						<i class="fa fa-desktop fa-4x"></i>
+						<h4>나만의 아무말후보</h4>
+						<p>나만의 분야별 아무말 후보들로 자신의 <br> 취향을 알아보고싶다면 클릭!</p>
+						<%= link_to 'Click!', {controller: :home, action: :vote1}, :class => "btn btn-primary" %>
+					</div>
+                </div>
+               
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.7s">
+					<div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+						<i class="fa fa-dropbox fa-4x"></i>
+						<h4>후보들은 누구?</h4>
+						<p>매일매일 아무말을 쏟아내는 <br> 자랑스러운 후보들은?</p>
+						<%=link_to 'Click!', '#about', class: "btn btn-primary" %>
+					</div>
+                </div>
+                
+                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.3s">
+					<div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+						<i class="fa fa-cog fa-4x"></i>
+						<h4>제보하기</h4>
+						<p>새로운 아무말, 틀린 아무말, <br>건의 사항 등을 보내주세요</p>
+						<%=link_to 'Click!', "#contact", class: "btn btn-primary" %>
+					</div>
+                </div>
+            </div>
+                
+			  </div>	
+		</div>
+	</section>
+	  
+	  
+		<!-- spacer -->	  
+		<section id="spacer1" class="home-section spacer">	
+           <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="color-light">
+						<h2 class="wow bounceInDown" data-wow-delay="1s">정치를 외면한 가장 큰 대가는 <br>가장 저질스러운 인간들에게 지배당한다는 것이다.</h2>
+						<p class="lead wow bounceInUp" data-wow-delay="2s">- Platon -</p>	
+						</div>
+					</div>				
+				</div>
+            </div>
+		</section>	  
+	  
+ <!-- About -->
+	  <section id="about" class="home-section bg-white">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h2>아무말 대잔치 후보는?</h2>
+					 <p>저희 아무말대잔치는 지면관계상 다섯분의 소년,소녀만 다루었습니다.</p>
+					</div>
+				  </div>
+			  </div>
+			  <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                    <%= image_tag "/img/team/1.jpeg", alt: "문재인", class: "img-responsive" %>
+                    <h4>1번 소년 문재인</h4>
+                    <p>소속사 : 더불어민주당</p>
+					</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.3s">
+					<div class="box-team wow bounceInDown">
+                    <%= image_tag '/img/team/2.jpeg', alt: "레드준표", class: "img-responsive" %>
+                    <h4>2번 소년 홍준표</h4>
+                    <p>소속사 : 자유한국당</p>
+					</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.5s">
+					<div class="box-team wow bounceInDown">
+                    <%= image_tag "/img/team/3.jpeg", alt: "안찰스", class: "img-responsive" %>
+                    <h4>3번 소년 안철수</h4>
+                   <p>소속사 : 국민의당</p>
+					</div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.7s">
+					<div class="box-team wow bounceInDown">
+                    <%= image_tag "/img/team/4.jpeg", alt: "유승민", class: "img-responsive" %>
+                    <h4>4번 소년 유승민</h4>
+                    <p>소속사 : 바른정당</p>
+					</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.7s">
+					<div class="box-team wow bounceInDown">
+                    <%= image_tag "/img/team/5.jpeg", alt: "심상정", class: "img-responsive" %>
+                    <h4>5번 소녀 심상정</h4>
+                    <p>소속사 : 정의당</p>
+					</div>
+                </div>
+			  </div>			  
+		  </div>	  
+	  </section>	  
+	
+	
+		<!-- spacer 2 -->	  
+		<section id="spacer2" class="home-section spacer">	
+           <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="color-light">
+						<h2 class="wow bounceInDown" data-wow-delay="1s">당신의 아무말 소년, 소녀를 뽑아주세요!</h2>
+						<p class="lead wow bounceInUp" data-wow-delay="2s">최악의 후보를 피하는 선택, '아무말 대잔치'와 함께!</p>	
+						</div>
+					</div>				
+				</div>
+            </div>
+		</section>	
+	  
+	 <!-- Contact -->
+	  <section id="contact" class="home-section bg-white">
+	  	<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h2>제보하기</h2>
+					 <p>새로운 아무말, 틀린 아무말, 서비스에 대한 아무말 등을 보내주세요</p>
+					</div>
+				  </div>
+			  </div>
+
+	  		<div class="row">
+	  			<div class="col-md-offset-2 col-md-8">
+	  			    <div id="sendmessage">전송되었습니다! 감사합니다!</div>
+                    <div id="errormessage"></div>
+                    <%= form_tag({controller: :home, action: :messagesend}, method: "post", role: "form", class: "contactForm") do %>
+                        <div class="form-group">
+                            <%= text_field_tag (:username), nil, class: "form-control", placeholder: "이름", :data=>{:rule=>'minlen:4', :msg=>'Please enter at least 4 chars'} %>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <%= email_field (:usermail), nil, class: "form-control", placeholder: "Email", :data=>{:rule=>'email', :msg=>'Please enter a valid email'} %>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <%= text_field_tag :topic, nil, class: "form-control", placeholder: "주제", :data=>{:rule=>'minlen:4', :msg=>'Please enter at least 8 chars of subject'} %>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <%= text_area_tag 'usersuggest', nil, class: "form-control", rows: 5, placeholder: "제보를 적어주세요", :data=>{:rule=>'required', :msg=>'Please write something for us'} %>
+                            <div class="validation"></div>
+                        </div>
+                        
+                        <div class="text-center"><%= submit_tag 'Send Message', class: "btn btn-theme btn-lg btn-block" %></div>
+                    <% end %>
+
+	
+	  			</div>
+	  		</div>
+
+	  	</div>
+	  </section>  
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; Mamba Theme. All Rights Reserved</p>
+                    <div class="credits">
+                        <!-- 
+                            All the links in the footer should remain intact. 
+                            You can delete the links only if you purchased the pro version.
+                            Licensing information: https://bootstrapmade.com/license/
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mamba
+                        -->
+                        <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    </div>
+                    
+				</div>
+			</div>		
+		</div>	
+	</footer>
